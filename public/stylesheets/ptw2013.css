@@ -1,0 +1,617 @@
+/* CSS for Node Phillys Philly Tech Week 2013 event*/
+/* Version: 1.0*/
+/* Authored: @bwhitham */
+/*__________________________________________________________ universals*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+.clear {
+  clear: both;
+}
+::-webkit-selection {
+  background-color: #f5ae49;
+  color: #fff;
+  -webkit-text-shadow: none;
+  -moz-text-shadow: none;
+  -o-text-shadow: none;
+  text-shadow: none;
+}
+::-moz-selection {
+  background-color: #f5ae49;
+  color: #fff;
+  -webkit-text-shadow: none;
+  -moz-text-shadow: none;
+  -o-text-shadow: none;
+  text-shadow: none;
+}
+::selection {
+  background-color: #f5ae49;
+  color: #fff;
+  -webkit-text-shadow: none;
+  -moz-text-shadow: none;
+  -o-text-shadow: none;
+  text-shadow: none;
+}
+input,
+button {
+  -webkit-appearance: none;
+  line-height: normal;
+}
+input:focus {
+  outline: 0;
+}
+img {
+  border: none;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+navul,
+navol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a,
+a:hover,
+a:visited {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+/*__________________________________________________________ typography*/
+html {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+p a {
+  font-weight: 600;
+  -webkit-text-shadow: 0 1px 0 #000;
+  -moz-text-shadow: 0 1px 0 #000;
+  -o-text-shadow: 0 1px 0 #000;
+  text-shadow: 0 1px 0 #000;
+  color: #f5ae49;
+}
+p a:visited {
+  color: #f5ae49;
+}
+/*__________________________________________________________ structure*/
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  min-width: inherit;
+  min-height: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #000;
+  padding: 0 0 150px 0;
+}
+div.logo {
+  width: 200px;
+  height: 125px;
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0 -429px;
+  position: absolute;
+  z-index: 101;
+  top: 45px;
+  left: 150px;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+section.category {
+  width: 100%;
+  min-height: 300px;
+}
+section.category[name='intro'] {
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-bluebg.jpg");
+  background-repeat: repeat;
+}
+section.category[name='intro'] h1 {
+  font-family: "Bubblegum Sans", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 50px;
+  display: block;
+  color: #fff;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  transform: rotate(10deg);
+  position: absolute;
+  right: 50px;
+  top: 70px;
+  -webkit-text-shadow: 0 2px #4c85b1;
+  -moz-text-shadow: 0 2px #4c85b1;
+  -o-text-shadow: 0 2px #4c85b1;
+  text-shadow: 0 2px #4c85b1;
+  text-align: center;
+}
+section.category[name='details'] {
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-purplebg.jpg");
+  background-repeat: repeat;
+}
+section.category[name='evening'] {
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-starbg.png");
+  background-repeat: repeat;
+  background-color: #05171f;
+}
+section.category[name='close'] {
+  background-color: #000;
+}
+section.category hr.rippin {
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: repeat-x;
+  background-position: 0 -379px;
+  width: 100%;
+  height: 50px;
+  z-index: 100;
+  margin: -25px 0 0 0;
+  position: absolute;
+}
+section.category article {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+section.category article[name='intro'] {
+  height: 600px;
+  border-right: 1px solid rgba(255,255,255,0.5);
+  border-left: 1px solid rgba(255,255,255,0.5);
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0 225px;
+  padding: 25px 0 0 0;
+}
+section.category article[name='details'] header,
+section.category article[name='details'] article {
+  width: 100%;
+  padding: 50px 0 60px 0;
+  border-bottom: 1px solid #f5ae49;
+}
+section.category article[name='details'] header h1,
+section.category article[name='details'] article h1,
+section.category article[name='details'] header h2,
+section.category article[name='details'] article h2,
+section.category article[name='details'] header time,
+section.category article[name='details'] article time {
+  font-family: "Bubblegum Sans", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  width: 50%;
+  -webkit-text-shadow: 0 2px #05171f;
+  -moz-text-shadow: 0 2px #05171f;
+  -o-text-shadow: 0 2px #05171f;
+  text-shadow: 0 2px #05171f;
+  color: #fff;
+  text-align: center;
+  display: block;
+  float: left;
+}
+section.category article[name='details'] header a.ptwlogo,
+section.category article[name='details'] article a.ptwlogo {
+  width: 448px;
+  height: 75px;
+  display: block;
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -200px -429px;
+  float: right;
+  margin: 0 50px 0 0;
+}
+section.category article[name='details'] header a.ninjablocks,
+section.category article[name='details'] article a.ninjablocks {
+  background-image: url("/imgs/ptw2013/ninjablock.png");
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 225px;
+  display: block;
+  float: left;
+  border: 5px solid #f5ae49;
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+  margin: 100px 25px 100px 0;
+}
+section.category article[name='details'] header h2,
+section.category article[name='details'] article h2,
+section.category article[name='details'] header time,
+section.category article[name='details'] article time {
+  font-size: 30px;
+  display: inline-block;
+  text-align: left;
+  width: auto;
+}
+section.category article[name='details'] header h2,
+section.category article[name='details'] article h2 {
+  margin: 0 15px 0 0;
+}
+section.category article[name='details'] header time,
+section.category article[name='details'] article time {
+  color: #6dbdfa;
+  display: inline;
+}
+section.category article[name='details'] header p,
+section.category article[name='details'] article p {
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  line-height: 30px;
+  margin: 25px 0 0 0;
+}
+section.category article[name='details'] header section.speakers,
+section.category article[name='details'] article section.speakers {
+  margin: 15px 0;
+}
+section.category article[name='details'] header section.speakers a,
+section.category article[name='details'] article section.speakers a {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 25%;
+  min-height: 320px;
+  float: left;
+  padding: 15px 15px 5px 15px;
+  -webkit-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+  text-align: center;
+}
+section.category article[name='details'] header section.speakers a img.headshot,
+section.category article[name='details'] article section.speakers a img.headshot {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #f5ae49;
+  margin: 0 auto;
+  display: block;
+}
+section.category article[name='details'] header section.speakers a img.headshot[name='markheadd'],
+section.category article[name='details'] article section.speakers a img.headshot[name='markheadd'] {
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  -o-transform: rotate(1deg);
+  transform: rotate(1deg);
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0 -840px;
+}
+section.category article[name='details'] header section.speakers a img.headshot[name='cityofphilly'],
+section.category article[name='details'] article section.speakers a img.headshot[name='cityofphilly'] {
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -150px -840px;
+}
+section.category article[name='details'] header section.speakers a img.headshot[name='sarachipps'],
+section.category article[name='details'] article section.speakers a img.headshot[name='sarachipps'] {
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -300px -840px;
+}
+section.category article[name='details'] header section.speakers a img.headshot[name='danfriedman'],
+section.category article[name='details'] article section.speakers a img.headshot[name='danfriedman'] {
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  -o-transform: rotate(1deg);
+  transform: rotate(1deg);
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -450px -840px;
+}
+section.category article[name='details'] header section.speakers a img.headshot[name='spikebrehm'],
+section.category article[name='details'] article section.speakers a img.headshot[name='spikebrehm'] {
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  -o-transform: rotate(1deg);
+  transform: rotate(1deg);
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -600px -840px;
+}
+section.category article[name='details'] header section.speakers a img.headshot[name='danshaw'],
+section.category article[name='details'] article section.speakers a img.headshot[name='danshaw'] {
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -750px -840px;
+}
+section.category article[name='details'] header section.speakers a img.headshot[name='substack'],
+section.category article[name='details'] article section.speakers a img.headshot[name='substack'] {
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  -o-transform: rotate(1deg);
+  transform: rotate(1deg);
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0 -990px;
+}
+section.category article[name='details'] header section.speakers a img.headshot[name='saucelabs'],
+section.category article[name='details'] article section.speakers a img.headshot[name='saucelabs'] {
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -300px -990px;
+}
+section.category article[name='details'] header section.speakers a img.headshot[name='bryanpaluch'],
+section.category article[name='details'] article section.speakers a img.headshot[name='bryanpaluch'] {
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  -o-transform: rotate(1deg);
+  transform: rotate(1deg);
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -150px -990px;
+}
+section.category article[name='details'] header section.speakers a h3,
+section.category article[name='details'] article section.speakers a h3 {
+  color: #fff;
+  margin: 10px 0 0 0;
+}
+section.category article[name='details'] header section.speakers a h4,
+section.category article[name='details'] article section.speakers a h4 {
+  color: #f5ae49;
+  text-transform: italic;
+}
+section.category article[name='details'] header section.speakers a p,
+section.category article[name='details'] article section.speakers a p {
+  margin: 5px 0 0 0;
+  line-height: 22px;
+}
+section.category article[name='details'] header section.speakers a:nth-child(4),
+section.category article[name='details'] article section.speakers a:nth-child(4) {
+  border-right: 0;
+}
+section.category article[name='details'] header section.speakers a:hover,
+section.category article[name='details'] article section.speakers a:hover {
+  background-color: rgba(168,50,192,0.4);
+}
+section.category article[name='details'] article {
+  padding: 20px 0;
+}
+section.category article[name='details'] article:nth-last-child(1) {
+  border-bottom: none;
+}
+section.category article[name='evening'] {
+  min-height: 620px;
+  border-right: 1px solid #6dbdfa;
+  border-left: 1px solid #6dbdfa;
+  background-image: url("/imgs/ptw2013/nodephilly-skyline-night.png");
+  background-repeat: no-repeat;
+  background-position: 0 275px;
+  padding: 0;
+}
+section.category article[name='evening'] h1 {
+  font-family: "Bubblegum Sans", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 50px;
+  display: block;
+  color: #6dbdfa;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  position: absolute;
+  left: 50px;
+  top: 60px;
+  -webkit-text-shadow: 0 4px #000;
+  -moz-text-shadow: 0 4px #000;
+  -o-text-shadow: 0 4px #000;
+  text-shadow: 0 4px #000;
+}
+section.category article[name='evening'] h1 time {
+  font-size: 30px;
+  color: #f5ae49;
+  top: 70px;
+  width: auto;
+  text-align: center;
+  margin: 0 0 0 150px;
+}
+section.category article[name='evening'] a.leadonomicslogo {
+  width: 280px;
+  height: 46px;
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0 -560px;
+  display: block;
+  position: absolute;
+  top: 100px;
+  right: 70px;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+section.category article[name='evening'] p {
+  font-size: 20px;
+  display: block;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+section.category article[name='close'] {
+  min-height: 300px;
+  padding: 0;
+}
+section.category article section.map,
+section.category article section.tix {
+  width: 50%;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 35px 20px;
+  color: #fff;
+}
+section.category article section.map a.buytix,
+section.category article section.tix a.buytix {
+  font-family: "Bubblegum Sans", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-color: #6dbdfa;
+  margin: 70px 0 0 0;
+  text-align: center;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg);
+  -webkit-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+  color: #fff;
+}
+section.category article section.map a.buytix p,
+section.category article section.tix a.buytix p {
+  display: block;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 15px 0;
+  margin: 25px 0 0 0;
+}
+section.category article section.map a.buytix:hover,
+section.category article section.tix a.buytix:hover {
+  background-color: #f5ae49;
+}
+section.category article section.map a.buytix:visited,
+section.category article section.tix a.buytix:visited {
+  color: inherit;
+}
+section.category article section.map a,
+section.category article section.map p {
+  display: block;
+}
+section.category article section.map a {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #6dbdfa;
+}
+section.category article section.map p {
+  font-size: 20px;
+  line-height: 20px;
+}
+section.category article[name='sponsors'] {
+  color: #fff;
+  height: 200px;
+  border-top: 1px solid #4c85b1;
+  margin-top: 15px;
+  padding: 15px 0 0 0;
+  text-align: center;
+}
+section.category article[name='sponsors'] p {
+  margin: 0 0 25px 0;
+}
+section.category article[name='sponsors'] a {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 25%;
+  height: 100px;
+  display: block;
+  float: left;
+  -webkit-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+  margin: 0 0 25px 0;
+}
+section.category article[name='sponsors'] a[name='chathamfinancial'] {
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0 -640px;
+}
+section.category article[name='sponsors'] a[name='ninjablocks'] {
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -250px -640px;
+}
+section.category article[name='sponsors'] a[name='leadnomics'] {
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -500px -640px;
+}
+section.category article[name='sponsors'] a[name='comcast'] {
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -750px -640px;
+}
+section.category article[name='sponsors'] a[name='voxer'] {
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0 -740px;
+}
+section.category article[name='sponsors'] a[name='saucelabs'] {
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -250px -740px;
+}
+section.category article[name='sponsors'] a[name='ucsc'] {
+  background-image: url("/imgs/ptw2013/nodeph-ptw2013-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -500px -740px;
+}
+section.category article[name='sponsors'] a:hover {
+  background-color: rgba(255,255,255,0.2);
+}
